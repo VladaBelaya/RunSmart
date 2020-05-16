@@ -15,7 +15,7 @@ $(document).ready(function () {
       {
         breakpoint: 767,
         settings: {
-          adaptiveHeight: true,
+
           dots: true,
           arrows: false,
           speed: 1000,
