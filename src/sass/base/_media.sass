@@ -26,7 +26,73 @@
             margin-top: 50px
         .title_left
             font-size: 30px
+    .carousel
+        padding-top: 65px 
+        padding-bottom: 30px
+        &__inner
+            width: 100%
+            img
+                display: block
+                margin: 0 auto
+                max-width: 750px;
+                height: 450px
+        .slick-dots  
+            font-size: 0
+            
+        ul
+            display: flex
+            justify-content: center
+            padding-left: 0
+            margin-top: 20px
+            button 
+                border-radius: 100%
+                border: none
+                width: 20px
+                height: 20px
+                margin: 20px 10px
+                background: #fda89f
+                transition: 0.4s all
+                &:hover
+                    background: $main-color
+                    box-shadow: 0px 0px 10px #FF270F
+    .catalog
+        &__tabs
+            margin-top: 55px
+        &__tab
+            width: 200px
+            margin: 0 7px
+        &__content
+            justify-content: center
+        &-item
+            margin: 0 15px
+            margin-bottom: 20px
 
+    .reviews
+        
+        &__item
+            margin-left: 20px
+            margin-right: 40px
+            img
+                width: 160px
+                height: 160px  
+        &__text
+            width: 500px  
+        &__descr
+            font-size: 14px
+    .footer
+        min-height: 430px
+        &__info
+            width: 410px
+            height: 200px
+            padding: 30px 40px 30px 40px
+        &__phone
+            margin-bottom: 25px
+        &__social-item
+            width: 45px
+            height: 45px
+            img
+                height: 25px
+        
 @media ( max-width: 767px )
     .container
         min-width: 550px
@@ -35,10 +101,10 @@
             display: none
     .promo
         &__header
-            font-size: 35px
+            font-size: 32px
         &__subheader
             margin-top: 10px
-            font-size: 19px
+            font-size: 18px
         &__icons
             width: 370px
         &__icon
@@ -71,6 +137,66 @@
             width: 285px
         .title_left
             font-size: 24px
+    .carousel
+        &__inner
+            img
+                max-width: 100%
+                height: auto      
+        ul
+            button 
+                margin: 0 15px
+                
+    .catalog
+        padding-bottom: 45px
+        &__tab
+            width: 150px
+            height: 45px
+            font-size: 14px
+            line-height: 43px
+        &__content
+            margin-top: 50px
+        &-item
+            min-height: 400px
+            &__wrapper
+                height: 280px
+            &__img
+                height: 160px
+            &__subtitle
+                margin-top: 7px
+            &__descr
+                margin-top: 7px
+            &__price
+                font-size: 17px
+            &__list li 
+                margin-bottom: 25px
+                font-size: 13px
+        .button
+            &_mini
+                width: 115px
+                height: 40px
+    .reviews
+        &__wrapper
+            padding-top: 30px
+        &__items
+            flex-direction: column
+        &__item 
+            margin-right: 20px
+            margin-bottom: 20px
+        &__text
+            text-align: center
+            width: 525px
+        &__descr
+            font-size: 13px
+    .footer
+        &__info
+            position: relative
+            width: 100%
+            max-height: 200px
+        &__map
+            height: 370px
+        &__map iframe
+            height: 370px
+
 @media ( max-width: 575px )
     .container
         min-width: 335px
@@ -108,6 +234,12 @@
             width: 160px
             height: 27px
             margin-top: 20px
+        &_modal
+            display: block
+            margin: 0 auto
+            width: 170px
+            height: 35px
+            font-size: 11px
     .advantages
         &__wrapper
             margin-top: 35px
@@ -138,3 +270,59 @@
                 height: 30px
                 font-size: 10px
                 margin: 2px auto
+            
+    .catalog
+        padding-bottom: 35px
+        .title
+            font-size: 20px
+        &__tabs
+            margin-top: 30px
+        &__tab
+            width: 94px
+            height: 30px
+            font-size: 10px
+            line-height: 30px
+            margin: 0 3px
+        .button_mini
+            width: 100px
+            height: 35px
+    .reviews
+        padding-bottom: 45px
+        &__wrapper
+            padding-top: 20px
+        .title
+            font-size: 25px
+        &__text
+            width: 265px
+        &__item
+            img
+                width: 130px
+                height: 130px
+    .footer
+        min-height: 370px
+        &__map
+            height: 300px
+        &__map iframe
+            height: 300px
+        &__addr
+            font-size: 15px
+            margin-bottom: 15px
+        &__phone
+            font-size: 15px
+            margin-bottom: 18px
+        &__info
+            max-height: 179px
+        &__social-item
+            width: 40px
+            height: 40px
+            img
+                height: 20px
+    #consultation, #order
+        padding: 20px 10px
+        width: 250px
+        min-height: 300px
+        .feed-form
+            width: 185px
+            margin: 10px auto
+        input
+            height: 35px
